@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Star Wars</title>
+<style>
+    body{
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png");
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position-x: 400px;
+        background-color: black;
+    }
+    .lista{
+        padding-top: 280px;
+        padding-left: 50px;
+        color: #f8f01b;
+        text-align: center;
+        font-style: verdana;
+    }
+</style>
+</head>
+
+<body>
+    <div class="lista">
+        <h1><%= lista %></h1>
+        <h5><a style="color: white;" href="http://localhost:3000/nuevo/<%= lista %>">Cargar nuevo</a></h5>
+       <% for (var i=0; i<nombres.length; i++) {%> 
+        <h4><a style="color: #f8f01b;" href="http://localhost:3000/mostrarLista/<%= nombres[i] %>"><%= nombres[i] %></a></h4>
+      <%} %> 
+    </div>
+
+</body>
+</html>

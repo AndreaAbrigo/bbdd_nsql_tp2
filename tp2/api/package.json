@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "redis": "^3.0.2",
+    "nodemon": "*"
+  },
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "jade": "^1.11.0"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>The Mandalorian</title>
+<style>body { color: black; font-family: Verdana; background-image: url("https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2020/03/TheMandalorian-1000x600.jpg");background-repeat: no-repeat;background-size: 100%;background-position-x:0px;}.titulo{padding-left: 800px; padding-top: 40px;}table{padding-left: 350px;padding-top: 0px;}.table2{padding-left: 5px;}h2{padding-left: 800px;}td{padding-right: 10px;}.form-group{padding-top: 10px;}.fila{padding-top: 15px;font-size: 20px;text-align: right;}.fila2{padding-top: 16px;font-size: 20px;text-align: center;}.cuerpo{padding-left: 650px; padding-top: 20px;text-align: center;}.boton1{text-align: center;background-color: transparent;color:white;padding-left: 40px;padding-right: 40px;border: transparent;font-size: large;}.btn-reservar{text-decoration: none;font-size: 17px;padding-left: 10px;padding-right: 10px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: italic;color: white;background-color: black;border-radius: 15px;border: 3px double black;}</style>
+</head>
+
+<body>
+    <h1 class="titulo">The Mandalorian</h1>
+    <div class="cuerpo">
+    <h3>¿Quieres alquilar "{{nombre}}"?</h3>
+    <h4>Su costo es de $100 y podrás tenerlo 24 horas</h4>
+    <form action="alquilar" method="POST">
+        <div class="form-group">
+          <input value="{{nombre}}" type="hidden" name="nombre" id="nombre">
+          <a class="boton1" href="/" role="button">Cancelar</a>
+          <button class="boton1" type="submit">ALQUILAR</button>
+        </div>
+      </form>
+    </div>
+</body>
+
+</html>
